@@ -13,7 +13,13 @@ $(document).ready(function() {
       }
     });
 
+    // alert(newWords);
+
     var reverseWords = newWords.reverse();
-    var stringWords = reverseWords.join(" ");  alert(stringWords);
+    var stringWords = reverseWords.join(" ");
+
+    $("#result").after(stringWords);
+    $(".items").show();
+
   });
 });
